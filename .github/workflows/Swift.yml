@@ -1,26 +1,19 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: Swift
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
-    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
-        swift: ["5.2", "5.3"]
-    runs-on: ${{ matrix.os }}
+
+    runs-on: macos-latest
+
     steps:
-      - uses: fwal/setup-swift@d43a564349d1341cd990cfbd70d94d63b8899475
-        with:
-          swift-version: ${{ matrix.swift }}
-      - uses: actions/checkout@v2
-      - name: Build
-        run: swift build
-      - name: Run tests
-        run: swift test
+    - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
