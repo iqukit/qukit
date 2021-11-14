@@ -7,6 +7,7 @@ final class qukitTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
         XCTAssertEqual(qukit().text, "Hello, World!")
+        XCTAssertEqual(qukit().name, "qukit")
     }
 
     static var allTests = [
