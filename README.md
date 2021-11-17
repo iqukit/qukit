@@ -8,7 +8,11 @@ Quantum Kit in Swift framework.
 
 ## Welcome to QuKit
 
-QuKit is a library for interacting with quantum physics.
+QuKit is a [Swift](https://www.swift.org/) library for interacting with quantum physics,
+which makes programming simple things easy, and difficult things possible.
+It is inspired by the [Quantum Optics Toolbox for MATLAB](https://qo.phy.auckland.ac.nz/toolbox/), 
+the Python framework [QuTiP](https://qutip.org/),
+and the [Julia Framework for Open Quantum Dynamics](https://qojulia.org/).
 
 To learn more about the library, visit [qukit.org](https://qukit.org/documentation/).
 
