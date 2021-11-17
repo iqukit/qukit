@@ -45,7 +45,7 @@ import qukit
 Add the following dependency to your Package.swift manifest:
 
 ```
-.package(url: "https://github.com/pvieito/PythonKit.git", .branch("main")),
+.package(url: "https://github.com/iqukit/qukit.git", .branch("main")),
 ```
 
 Namely,
@@ -56,7 +56,7 @@ import PackageDescription
 let package = Package(
     name: "MyPackage",
     dependencies: [
-        .package(url: "https://github.com/pvieito/PythonKit.git", .branch("main")),
+        .package(url: "https://github.com/iqukit/qukit.git", .branch("main")),
     ],
     targets: [
         .target(
