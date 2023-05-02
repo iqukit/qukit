@@ -42,7 +42,7 @@ import qukit
 
 ## Swift Package Manager
 
-Add the following dependency to your Package.swift manifest:
+Add the following dependency to your `Package.swift` manifest:
 
 ```
 .package(url: "https://github.com/iqukit/qukit.git", .branch("main")),
